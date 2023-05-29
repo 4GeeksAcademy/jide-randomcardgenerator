@@ -6,6 +6,7 @@ body {
 
 .card {
   background: white;
+  text-align: center;
   display: inline-block;
   margin: auto;
   height: 400px;
@@ -16,11 +17,13 @@ body {
   position: relative;
   .top-suit {
     position: absolute;
+    font-size: 80px;
     top: 20px;
     left: 20px;
   }
   .bottom-suit {
     position: absolute;
+    font-size: 80px;
     bottom: 20px;
     right: 20px;
   }
