@@ -2,6 +2,10 @@
 import "bootstrap";
 import "./style.css";
 
-window.onload = function() {
-  console.log("Hello Rigo from the console!");
+window.onload = () => {
+  document.querySelector(".card").classList.add("heart");
+  setTimeout(() => {
+    document.querySelector(".card").classList.remove("heart");
+    document.querySelector(".card").classList.add("spade");
+  }, 1000); // 1000 millisecods = 1 second
 };
