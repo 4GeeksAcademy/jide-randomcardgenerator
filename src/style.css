@@ -2,6 +2,7 @@
 
 body {
   background: #0e7e12;
+  box-sizing: border-box;
 }
 
 .card {
@@ -12,19 +13,39 @@ body {
   height: 400px;
   width: 250px;
   padding: 20px;
+  padding-top: 140px;
+  font-size: 80px;
   border-radius: 20px;
   border: 1px solid black;
   position: relative;
-  .top-suit {
+  &:before {
     position: absolute;
     font-size: 80px;
     top: 20px;
     left: 20px;
   }
-  .bottom-suit {
+  &:after {
     position: absolute;
     font-size: 80px;
     bottom: 20px;
     right: 20px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
   }
 }
