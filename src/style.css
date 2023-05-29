@@ -5,8 +5,23 @@ body {
 }
 
 .card {
+  background: white;
   display: inline-block;
   margin: auto;
-  height: 500px;
-  width: 200px;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: relative;
+  .top-suit {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bottom-suit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
