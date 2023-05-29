@@ -21,13 +21,13 @@ body {
   &:before {
     position: absolute;
     font-size: 80px;
-    top: 20px;
+    top: 10px;
     left: 20px;
   }
   &:after {
     position: absolute;
     font-size: 80px;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
   }
   &.spade:before,
