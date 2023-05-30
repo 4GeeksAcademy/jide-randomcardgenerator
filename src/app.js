@@ -36,4 +36,10 @@ let generateRandomSuit = () => {
 /* setTimeout(() => {
   document.querySelector(".card").classList.remove("heart");
   document.querySelector(".card").classList.add("spade");
-}, 1000); // 1000 milliseconds = 1 second 32:07/33:01 */
+}, 1000); // 1000 milliseconds = 1 second */
+
+/* window.onload = () => {
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#the-excuse").innerHTML = generateExcuse();
+  });
+}; */
