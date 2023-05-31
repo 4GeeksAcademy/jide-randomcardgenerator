@@ -7,6 +7,14 @@ window.onload = () => {
   document.querySelector(".card").innerHTML = generateRandomNumber();
 };
 
+document.querySelector("#btn").addEventListener("click", () => {
+  document
+    .querySelector(".card")
+    .classList.remove("heart", "spade", "diamond", "club");
+  document.querySelector(".card").classList.add(generateRandomSuit());
+  document.querySelector(".card").innerHTML = generateRandomNumber();
+});
+
 let generateRandomNumber = () => {
   let numbers = [
     "A",
@@ -37,9 +45,3 @@ let generateRandomSuit = () => {
   document.querySelector(".card").classList.remove("heart");
   document.querySelector(".card").classList.add("spade");
 }, 1000); // 1000 milliseconds = 1 second */
-
-/* window.onload = () => {
-  document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the-excuse").innerHTML = generateExcuse();
-  });
-}; */
