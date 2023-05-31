@@ -15,6 +15,14 @@ document.querySelector("#btn").addEventListener("click", () => {
   document.querySelector(".card").innerHTML = generateRandomNumber();
 });
 
+setInterval(() => {
+  document
+    .querySelector(".card")
+    .classList.remove("heart", "spade", "diamond", "club");
+  document.querySelector(".card").classList.add(generateRandomSuit());
+  document.querySelector(".card").innerHTML = generateRandomNumber();
+}, 10000); // 1000 milliseconds = 1 second
+
 let generateRandomNumber = () => {
   let numbers = [
     "A",
@@ -40,8 +48,3 @@ let generateRandomSuit = () => {
   let indexSuit = Math.floor(Math.random() * suit.length);
   return suit[indexSuit];
 };
-
-/* setTimeout(() => {
-  document.querySelector(".card").classList.remove("heart");
-  document.querySelector(".card").classList.add("spade");
-}, 1000); // 1000 milliseconds = 1 second */
