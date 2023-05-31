@@ -17,7 +17,7 @@ body {
   border-radius: 20px;
   border: 1px solid black;
   position: relative;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
   &:before {
     position: absolute;
     font-size: 80px;
